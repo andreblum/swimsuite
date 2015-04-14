@@ -25,4 +25,4 @@ or:
 
 ## Run the Web App
 
-Point a browser at <your docker host ip>:8080/status
+Point a browser at your-docker-host:8080/status
