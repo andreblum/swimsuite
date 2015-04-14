@@ -22,3 +22,7 @@ or:
 
     docker build andreblum/swimsuite .
     docker run --name swimsuite --link mongo:swimsuite_mongo -p 8080:80 -d andreblum/swimsuite
+
+## Run the Web App
+
+Point a browser at <your docker host ip>:8080/status
