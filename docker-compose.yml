@@ -1,0 +1,11 @@
+swimsuite:
+  image: andreblum/swimsuite
+  links:
+    - mongo:swimsuite_mongo
+  ports:
+    - 8080:80
+
+mongo:
+  image: mongo
+  volumes: 
+    - /root/mongo:/data/db 

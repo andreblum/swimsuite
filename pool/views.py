@@ -3,6 +3,7 @@ from django.http import HttpResponse
 from django.template.loader import get_template
 from django.template import Context
 import pymongo
+import os
 import time
 import datetime
 import matplotlib
@@ -12,7 +13,10 @@ from matplotlib.backends.backend_agg import FigureCanvasAgg as FigureCanvas
 
 # Create your views here.
 
-c = pymongo.Connection('192.168.1.6', 27017)
+mongo_host = os.environ['SWIMSUITE_MONGO_PORT_27017_TCP_ADDR']
+mongo_port = int(os.environ['SWIMSUITE_MONGO_PORT_27017_TCP_PORT'])
+
+c = pymongo.Connection(mongo_host, mongo_port)
 db = c.swimsuite_database
 p = db.posts
 p.create_index('time')
