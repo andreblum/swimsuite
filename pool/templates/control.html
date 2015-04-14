@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    <title>Swimsuite Control</title>
+    <link href="static/control.css" rel="stylesheet" type="text/css"/>
+{% endblock %}
+{% block content %}
+<H1>Controls</H1>
+<p/>
+<i>Dit is nog nep, dus klik maar raak!</i>
+<p/>
+<table>
+    <tr>
+        <td><H2>Pomp</H2></td>
+        <td>
+            <div class="onoffswitch">
+                <input type="checkbox" name="pumponoffswitch" class="onoffswitch-checkbox" id="pumponoffswitch" checked>
+                <label class="onoffswitch-label" for="pumponoffswitch">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><H2>Solar</H2></td>
+        <td>
+            <div class="onoffswitch">
+                <input type="checkbox" name="solaronoffswitch" class="onoffswitch-checkbox" id="solaronoffswitch" checked>
+                <label class="onoffswitch-label" for="solaronoffswitch">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td><H2>Verlichting</H2></td>
+        <td>
+            <div class="onoffswitch">
+                <input type="checkbox" name="lightonoffswitch" class="onoffswitch-checkbox" id="lightonoffswitch" checked>
+                <label class="onoffswitch-label" for="lightonoffswitch">
+                    <div class="onoffswitch-inner"></div>
+                    <div class="onoffswitch-switch"></div>
+                </label>
+            </div>
+        </td>
+    </tr>
+</table>
+{% endblock %}

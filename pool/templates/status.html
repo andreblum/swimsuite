@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% block content %}
+<H1>Status</H1>
+<p/>
+{{ time }}
+<p/>
+<table border="1">
+    <tr>
+        <td>temperatuur water</td>
+        <td>{{ water }}</td>
+    </tr>
+    <tr>
+        <td>temperatuur dak</td>
+        <td>{{ roof }}</td>
+    </tr>
+    <tr>
+        <td>pomp</td>
+        <td>{{ pump }}</td>
+    </tr>
+    <tr>
+        <td>solar</td>
+        <td>{{ valve }}</td>
+    </tr>
+</table>
+<p/>
+<a href="status">vernieuwen</a>
+<p/>
+<a href="today">grafiek van vandaag</a>
+<p/>
+<a href="week">grafiek van week</a>
+<p/>
+<a href="log">logs</a>
+<p/>
+<a href="control">controls (experimenteel)</a>
+{% endblock %}
